@@ -10,21 +10,21 @@ codec = { package = "parity-scale-codec", version = "2.0.0", default-features = 
 serde = { version = "1.0.101", optional = true }
 
 # primitives
-sp-std = { version = "3.0.0", default-features = false }
-sp-runtime = { version = "3.0.0", default-features = false }
-sp-io = { version = "3.0.0", default-features = false }
-sp-core = { version = "3.0.0", default-features = false }
-sp-arithmetic = { version = "3.0.0", default-features = false }
+sp-std = { version = "3.0.0", default-features = false, git = 'https://github.com/paritytech/substrate.git', rev = '90cfb952f' }
+sp-runtime = { version = "3.0.0", default-features = false, git = 'https://github.com/paritytech/substrate.git', rev = '90cfb952f' }
+sp-io = { version = "3.0.0", default-features = false, git = 'https://github.com/paritytech/substrate.git', rev = '90cfb952f' }
+sp-core = { version = "3.0.0", default-features = false, git = 'https://github.com/paritytech/substrate.git', rev = '90cfb952f' }
+sp-arithmetic = { version = "3.0.0", default-features = false, git = 'https://github.com/paritytech/substrate.git', rev = '90cfb952f' }
 
 # frame dependencies
-frame-support = { version = "3.0.0", default-features = false }
-frame-system = { version = "3.0.0", default-features = false }
+frame-support = { version = "3.0.0", default-features = false, git = 'https://github.com/paritytech/substrate.git', rev = '90cfb952f' }
+frame-system = { version = "3.0.0", default-features = false, git = 'https://github.com/paritytech/substrate.git', rev = '90cfb952f' }
 
 chainbridge = { path = "../chainbridge" , default-features = false}
 example-erc721 = { path = "../example-erc721", default-features = false }
 
 [dev-dependencies]
-pallet-balances = { version = "3.0.0", default-features = false }
+pallet-balances = { version = "3.0.0", default-features = false, git = 'https://github.com/paritytech/substrate.git', rev = '90cfb952f' }
 
 [build-dependencies]
 wasm-builder-runner = { version = "2.0.0", package = "substrate-wasm-builder-runner" }
