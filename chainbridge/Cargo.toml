@@ -36,3 +36,4 @@ std = [
 	"frame-system/std",
 	"pallet-balances/std",
 ]
+runtime-benchmarks = []
